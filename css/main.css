@@ -95,8 +95,9 @@ a:hover {
 
 /* Navigation icons */
 
-.navbar {
+.navbar-custom {
     font-size: 100%;
+    background-color: lightgreen;
 }
 .navbar-icon {
     font-size: 125%;
