@@ -105,8 +105,9 @@ a:hover {
 
 /* Colored borders at top/bottom of page */
 
-.navbar.navbar-default {
+.navbar.navbar-custom {
     border-top: var(--border-width) solid var(--accent);
+    background-color: lightgreen;
 }
 
 footer {
