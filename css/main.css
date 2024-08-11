@@ -95,8 +95,9 @@ a:hover {
 
 /* Navigation icons */
 
-.navbar {
+.navbar-custom {
     font-size: 100%;
+    background-color: lightgreen;
 }
 .navbar-icon {
     font-size: 125%;
@@ -105,9 +106,8 @@ a:hover {
 
 /* Colored borders at top/bottom of page */
 
-.navbar.navbar-custom {
+.navbar.navbar-default {
     border-top: var(--border-width) solid var(--accent);
-    background-color: lightgreen;
 }
 
 footer {
