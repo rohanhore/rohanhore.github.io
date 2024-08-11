@@ -112,3 +112,7 @@ a:hover {
 footer {
     border-bottom: var(--border-width) solid var(--accent);
 }
+
+h1 {
+  border-left: var(--border-width) solid var(--accent);
+}
