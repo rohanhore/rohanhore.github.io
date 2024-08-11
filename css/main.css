@@ -107,6 +107,7 @@ a:hover {
 
 .navbar.navbar-default {
     border-top: var(--border-width) solid var(--accent);
+    border-left: var(--border-width) solid var(--accent);
 }
 
 footer {
