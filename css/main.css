@@ -94,6 +94,11 @@ a:hover {
 }
 
 /* Navigation icons */
+#nav {
+    position: relative;
+    left: -90px;
+    background-color: #7777777; /*Whatever color you want goes here, but in Hexadecimal form*/
+}
 
 .navbar {
     font-size: 100%;
