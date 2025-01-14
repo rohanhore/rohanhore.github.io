@@ -25,6 +25,25 @@
         border: 1px solid var(--accent); /* Highlighted border using accent color */
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
     }
+    .navbar {
+        background-color: #D4D4C8; /* Shagreen-tinted background for subtle contrast */
+        border: none; /* Remove border if desired */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+    }
+
+    .navbar a {
+        color: inherit; /* Retain current gray link color */
+        text-decoration: none; /* Clean look, no underline */
+    }
+
+    .navbar a:hover {
+        color: #0D98BA; /* Bluish tone for hover effect */
+        text-decoration: none; /* Avoid underline on hover */
+    }
+
+    .navbar .navbar-toggle .icon-bar {
+        background-color: #6C757D; /* Matches the gray tone for the toggle bars */
+    }
 
 </style>
 
@@ -94,8 +113,10 @@
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
+                    <!-- Visible only on small screens -->
                     <a class="navbar-brand visible-xs" href="#">Rohan Hore</a>
-                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                    <!-- Toggle button for collapsed navbar on smaller screens -->
+                    <button type="button" class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
