@@ -269,14 +269,71 @@ hr {
         color: #0D98BA !important;
         text-decoration: none !important;
     }
-    /* Remove default focus box */
-    
-    a:focus,
-    a:active,
-    button:focus,
-    button:active,
-    .navbar a:focus,
-    .navbar a:active {
-        outline: none !important;
-        box-shadow: none !important;
+    /* ---------- Research page ---------- */
+
+.research-intro {
+    max-width: 780px;
+    margin: 0 auto 28px;
+}
+
+.publication-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 18px;
+}
+
+.paper {
+    margin-bottom: 28px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--light-border);
+}
+
+.paper:last-child {
+    border-bottom: none;
+}
+
+.paper-title {
+    font-size: 1.08em;
+    font-weight: 600;
+    color: #222;
+    line-height: 1.4;
+}
+
+.paper-title a {
+    color: inherit !important;
+}
+
+.paper-authors {
+    margin-top: 5px;
+    color: #555;
+}
+
+.paper-venue {
+    margin-top: 4px;
+    color: #777;
+    font-style: italic;
+    font-size: 0.95em;
+}
+
+.paper-links {
+    margin-top: 10px;
+}
+
+.paper-links a {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 14px;
+    color: var(--accent) !important;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.paper-links a i {
+    margin-right: 5px;
+    font-size: 1.05em;
+}
+
+.paper-links a:hover {
+    color: #08758f !important;
+}
 }
