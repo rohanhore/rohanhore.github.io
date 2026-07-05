@@ -175,12 +175,12 @@ hr {
 
 .home-header {
     text-align: center;
-    margin-top: 28px;
-    margin-bottom: 42px;
+    margin-top: 24px;
+    margin-bottom: 38px;
 }
 
 .home-header h1 {
-    font-size: 3.1em;
+    font-size: 3.2em;
     font-weight: 600;
     letter-spacing: -0.025em;
     margin-bottom: 10px;
@@ -195,37 +195,59 @@ hr {
 
 .home-hero {
     display: grid;
-    grid-template-columns: 340px 1fr;
-    gap: 52px;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 34px;
     align-items: start;
-    margin-top: 0;
+    max-width: 860px;
+    margin: 0 auto;
 }
 
 .home-photo {
-    text-align: center;
+    text-align: left;
 }
 
 .home-photo .profile-pic {
-    width: 330px;
+    width: 300px;
     max-width: 100%;
     border-radius: 16px;
 }
 
 .home-intro {
     font-size: 17px;
-    padding-top: 8px;
+    padding-top: 4px;
 }
 
 .welcome-message {
     font-size: 1.12em;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .home-contact {
-    margin-top: 42px;
-    padding-top: 22px;
+    max-width: 860px;
+    margin: 42px auto 0;
+    padding-top: 24px;
     border-top: 1px solid var(--light-border);
+}
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: fit-content;
+    margin-bottom: 12px;
     font-size: 16.5px;
+    color: var(--text);
+}
+
+.contact-row:hover {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+.contact-icon {
+    width: 24px;
+    text-align: center;
+    font-size: 18px;
 }
 
 @media (max-width: 768px) {
@@ -242,15 +264,15 @@ hr {
         gap: 24px;
     }
 
+    .home-photo {
+        text-align: center;
+    }
+
     .home-photo .profile-pic {
-        width: 260px;
+        width: 270px;
     }
 
     .home-intro {
         padding-top: 0;
-    }
-
-    .home-contact {
-        text-align: left;
     }
 }
