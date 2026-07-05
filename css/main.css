@@ -121,12 +121,30 @@ hr { border: 0; border-top: 1px solid var(--light-border); margin: 28px 0; }
     margin-right: 3px;
 }
 
-/* Teaching */
-.teaching-list { padding-left: 24px; margin-top: 10px; }
-.teaching-list li { margin-bottom: 8px; }
-.course-title { font-weight: 600; color: #1f2933; }
-.course-term { color: var(--muted); }
+/* ---------- Teaching page ---------- */
 
+.teaching-section h4 {
+    font-size: 1.35em;
+    font-weight: 600;
+    color: #1f2933;
+    margin-top: 28px;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #d8e3ea;
+    display: inline-block;
+}
+
+.teaching-section ul {
+    margin-top: 10px;
+    margin-bottom: 24px;
+    padding-left: 22px;
+}
+
+.teaching-section li {
+    font-size: 1.02em;
+    line-height: 1.55;
+    margin-bottom: 8px;
+}
 /* Footer */
 .copyright { margin: 20px 0; color: var(--muted); font-size: 14px; text-align: center; }
 .pages { padding: 15px 0; }
