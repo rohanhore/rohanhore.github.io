@@ -135,7 +135,7 @@ img {
 .profile-pic,
 .home-photo .profile-pic {
     display: block;
-    width: 320px;
+    width: 270px;
     max-width: 100%;
     height: auto;
     float: none;
