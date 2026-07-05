@@ -250,17 +250,29 @@ hr {
         margin: 0 auto;
     }
 
-    .home-contact {
-    margin-top: 40px;
-    text-align: center;
+    /* ---------- Bottom icon row ---------- */
+
+.home-contact {
+    margin: 55px auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;              /* spacing between icons */
+    width: 100%;
 }
 
 .contact-icon-link {
-    display: inline-block;
-    margin: 0 18px;
-    color: #5a6470;
-    font-size: 1.8rem;
-    transition: color 0.2s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 54px;
+    height: 54px;
+
+    color: #5d6670;
+    font-size: 2rem;
+
+    transition: all 0.2s ease;
 }
 
 .contact-icon-link:hover {
@@ -268,5 +280,22 @@ hr {
     transform: translateY(-2px);
     text-decoration: none;
 }
+
+.contact-icon-link i {
+    line-height: 1;
+}
+
+@media (max-width:768px) {
+
+    .home-contact {
+        gap: 28px;
+        margin-top: 40px;
+    }
+
+    .contact-icon-link {
+        width: 46px;
+        height: 46px;
+        font-size: 1.7rem;
+    }
 
 }
