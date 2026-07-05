@@ -1,6 +1,4 @@
-html, body {
-    min-height: 100%;
-}
+html, body { min-height: 100%; }
 
 :root {
     --accent: #0D98BA;
@@ -35,17 +33,9 @@ h1, h2, h3, h4, h5 {
     line-height: 1.25;
 }
 
-p {
-    margin-bottom: 1.05em;
-}
+p { margin-bottom: 1.05em; }
 
-.content {
-    padding-top: 12px;
-    font-size: 16px;
-}
-
-a:link,
-a:visited {
+a:link, a:visited {
     color: var(--accent);
     text-decoration: none;
 }
@@ -121,21 +111,19 @@ img {
 
 .home-hero {
     display: grid;
-    grid-template-columns: 320px 1fr;
-    gap: 28px;
+    grid-template-columns: 285px 1fr;
+    gap: 32px;
     align-items: start;
-    max-width: 840px;
+    max-width: 830px;
     margin: 0 auto;
 }
 
-.home-photo {
-    text-align: left;
-}
+.home-photo { text-align: left; }
 
 .profile-pic,
 .home-photo .profile-pic {
     display: block;
-    width: 270px;
+    width: 285px;
     max-width: 100%;
     height: auto;
     float: none;
@@ -156,33 +144,40 @@ img {
     margin-bottom: 18px;
 }
 
-/* Contact block */
+/* Bottom icon row */
 
 .home-contact {
-    max-width: 840px;
-    margin: 42px auto 0;
-    padding-top: 24px;
-    border-top: 1px solid var(--light-border);
+    width: 100%;
+    max-width: 830px;
+    margin: 50px auto 18px;
+    padding: 0;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
+    text-align: center;
 }
 
-.contact-row {
+.contact-icon-link {
     display: flex;
     align-items: center;
-    gap: 12px;
-    width: fit-content;
-    margin-bottom: 12px;
-    font-size: 16.5px;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    color: #5d6670 !important;
+    font-size: 30px;
+    text-decoration: none !important;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.contact-row:hover {
-    text-decoration: none;
+.contact-icon-link:hover {
+    color: var(--accent) !important;
+    transform: translateY(-2px);
+    text-decoration: none !important;
 }
 
-.contact-icon {
-    width: 24px;
-    text-align: center;
-    font-size: 18px;
-}
+.contact-icon-link i { line-height: 1; }
 
 /* General */
 
@@ -199,21 +194,10 @@ hr {
     text-align: center;
 }
 
-.pages {
-    padding: 15px 0;
-}
-
-.pages-icon {
-    padding: 0 15px;
-}
-
-.item {
-    padding: 24px 0;
-}
-
-.item-tag {
-    background-color: var(--accent);
-}
+.pages { padding: 15px 0; }
+.pages-icon { padding: 0 15px; }
+.item { padding: 24px 0; }
+.item-tag { background-color: var(--accent); }
 
 /* Mobile */
 
@@ -223,79 +207,33 @@ hr {
         font-size: 15.5px;
     }
 
-    main {
-        padding: 24px 18px 40px;
-    }
+    main { padding: 24px 18px 40px; }
 
-    .home-header {
-        margin-bottom: 28px;
-    }
+    .home-header { margin-bottom: 28px; }
 
-    .home-header h1 {
-        font-size: 2.45em;
-    }
+    .home-header h1 { font-size: 2.45em; }
 
     .home-hero {
         grid-template-columns: 1fr;
         gap: 24px;
     }
 
-    .home-photo {
-        text-align: center;
-    }
+    .home-photo { text-align: center; }
 
     .profile-pic,
     .home-photo .profile-pic {
-        width: 270px;
+        width: 260px;
         margin: 0 auto;
     }
 
-    /* ---------- Bottom icon row ---------- */
-
-.home-contact {
-    margin: 55px auto 20px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 42px;              /* spacing between icons */
-    width: 100%;
-}
-
-.contact-icon-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 54px;
-    height: 54px;
-
-    color: #5d6670;
-    font-size: 2rem;
-
-    transition: all 0.2s ease;
-}
-
-.contact-icon-link:hover {
-    color: #0D98BA;
-    transform: translateY(-2px);
-    text-decoration: none;
-}
-
-.contact-icon-link i {
-    line-height: 1;
-}
-
-@media (max-width:768px) {
-
     .home-contact {
-        gap: 28px;
+        gap: 34px;
         margin-top: 40px;
     }
 
     .contact-icon-link {
         width: 46px;
         height: 46px;
-        font-size: 1.7rem;
+        font-size: 26px;
     }
-
 }
