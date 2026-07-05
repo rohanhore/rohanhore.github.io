@@ -251,6 +251,22 @@ hr {
     }
 
     .home-contact {
-        text-align: left;
-    }
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-icon-link {
+    display: inline-block;
+    margin: 0 18px;
+    color: #5a6470;
+    font-size: 1.8rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-icon-link:hover {
+    color: #0D98BA;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
 }
