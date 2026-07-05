@@ -171,3 +171,54 @@ hr {
         font-size: 15.5px;
     }
 }
+
+
+.home-hero {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 44px;
+    align-items: start;
+    margin-top: 36px;
+}
+
+.home-photo {
+    text-align: center;
+}
+
+.home-intro h2 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 1.08em;
+    margin-bottom: 24px;
+}
+
+.home-links {
+    margin-top: 22px;
+}
+
+.home-links a {
+    display: inline-block;
+    margin-right: 16px;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .home-hero {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .home-intro h2,
+    .subtitle {
+        text-align: center;
+    }
+
+    .home-links {
+        text-align: center;
+    }
+}
