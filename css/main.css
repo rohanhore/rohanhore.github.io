@@ -40,7 +40,7 @@ img { max-width: 100%; height: auto; }
 /* ---------- Navbar ---------- */
 
 .navbar.navbar-default {
-    background: #eef6fa !important;
+    background: linear-gradient(180deg, #f4fbfe 0%, #e9f4f8 100%) !important;
     border: none !important;
     border-bottom: 1px solid #cfe3ec !important;
     box-shadow: 0 2px 8px rgba(13, 152, 186, 0.08) !important;
