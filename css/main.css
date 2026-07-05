@@ -176,44 +176,61 @@ hr {
 .home-hero {
     display: grid;
     grid-template-columns: 250px 1fr;
-    gap: 44px;
+    gap: 48px;
     align-items: start;
-    margin-top: 36px;
+    margin-top: 42px;
 }
 
 .home-photo {
     text-align: center;
 }
 
-.home-intro h2 {
-    text-align: left;
+.home-intro {
+    font-size: 17px;
+}
+
+.home-name {
+    font-size: 2.7em;
+    font-weight: 600;
+    letter-spacing: -0.02em;
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 .subtitle {
-    color: #555;
+    color: #39424e;
+    font-size: 1.18em;
+    line-height: 1.45;
+    margin-bottom: 34px;
+}
+
+.welcome-message {
     font-size: 1.08em;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
 }
 
 .home-links {
-    margin-top: 22px;
+    margin-top: 28px;
+    padding-top: 18px;
+    border-top: 1px solid var(--light-border);
 }
 
 .home-links a {
     display: inline-block;
-    margin-right: 16px;
-    font-weight: 600;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 0.96em;
+    letter-spacing: 0.01em;
 }
 
 @media (max-width: 768px) {
     .home-hero {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 22px;
     }
 
-    .home-intro h2,
+    .home-name,
     .subtitle {
         text-align: center;
     }
