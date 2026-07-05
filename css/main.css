@@ -118,7 +118,7 @@ img {
 
 .home-hero {
     display: grid;
-    grid-template-columns: 285px 1fr;
+    grid-template-columns: 260px 1fr;
     gap: 32px;
     align-items: start;
     max-width: 830px;
@@ -130,7 +130,7 @@ img {
 .profile-pic,
 .home-photo .profile-pic {
     display: block;
-    width: 285px;
+    width: 260px;
     max-width: 100%;
     height: auto;
     float: none;
@@ -271,4 +271,14 @@ hr {
         color: #0D98BA !important;
         text-decoration: none !important;
 }
+/* Remove default focus box */
+
+a:focus,
+a:active,
+button:focus,
+button:active,
+.navbar a:focus,
+.navbar a:active {
+    outline: none !important;
+    box-shadow: none !important;
 }
